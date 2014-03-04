@@ -71,7 +71,7 @@
             schreib gemeinsam.</p>
             <p>
             <input id="customPadUrl" type="text" align="middle" placeholder="Name Deines Pads" /><br>
-            <a href="#" onclick="openLitePadUrl()">
+            <a id="createButton" href="#" onclick="openLitePadUrl()">
               <div class="btn btn-default btn-large">Jetzt anlegen!</div>
             </a>
             </p>
@@ -212,6 +212,14 @@
   <script src="js/grayscale.js"></script>
 
   <script type="text/javascript">
+   $(function() {
+$("#customPadUrl").keyup(function(event){
+    if(event.keyCode == 13){
+        $("#createButton").click();
+    }
+});
+  });
+
     function createUUID() {
       var s = [];
       var hexDigits = "0123456789abcdef";
