@@ -69,17 +69,25 @@
             <p class="intro-text">Protokolle, Notizen,
             Arbeitsentwürfe - leg einfach ein Pad an und
             schreib gemeinsam.</p>
-            <p>
-            <input id="customPadUrl" type="text" align="middle" placeholder="Name Deines Pads" /><br>
-            <a id="createButton" href="#" onclick="openLitePadUrl()">
-              <div class="btn btn-default btn-large">Jetzt anlegen!</div>
-            </a>
-            </p>
-            <div class="page-scroll">
-              <a href="#about" class="btn btn-circle">
-                <i class="fa fa-angle-double-down animated"></i>
-              </a>
-            </div>
+            <div class="row">
+              <div class="col-lg-6 col-md-offset-3">
+                <div class="input-group">
+                  <input type="text" class="form-control"
+                  id="customPadUrl" align="middle" placeholder="Titel Deines Pads">
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="button"
+                      id="createButton" onclick="openLitePadUrl()">Anlegen!</button>
+                  </span>
+                </div><!-- /input-group -->
+              </div><!-- /.col-lg-6 -->
+            </div><!-- /.row -->
+            <div class="row top-buffer">
+              <div class="page-scroll">
+                <a href="#about" class="btn btn-circle">
+                  <i class="fa fa-angle-double-down animated"></i>
+                </a>
+              </div>
+            </div><!-- /.row -->
           </div>
         </div>
       </div>
@@ -102,11 +110,7 @@
         nachvollziehen. Nachdem das Dokument
         fertig ist kannst Du es in verschiedenen Formaten
         herunterladen und weiter damit arbeiten.</p> 
-        <p>codicill.us basiert auf der Open-Source-Software <a
-          href="https://github.com/ether/etherpad-lite">Etherpad
-          Lite</a> und ist kostenlos. Den Quellcode dieser Startseite
-        findest Du auf <a
-          href="https://github.com/gonium/codicill.us_startpage">github</a>.</p>
+        
       </div>
     </div> 
   </section>
@@ -130,6 +134,16 @@
           Passwort. Wer den Link kennt, kann am Dokument arbeiten. Gehe
           also sorgfältig damit um!
           </p>
+          <p><strong>Wie funktioniert das Ganze?</strong><br>
+          codicill.us basiert auf der Open-Source-Software <a
+          href="https://github.com/ether/etherpad-lite">Etherpad
+          Lite</a>. Den Quellcode dieser Startseite
+        findest Du auf <a
+          href="https://github.com/gonium/codicill.us_startpage">github</a>
+        &mdash; ausgeliefert werden die Webseiten mit <a
+          href="http://www.nginx.org">nginx</a>.  Der Server läuft unter <a
+            href="http://www.freebsd.org">FreeBSD</a>.
+        </p>
           <p><strong>Wie finanziert Ihr Euch?</strong><br>
           Wir sind ein gemeinnütziger Verein, der sich aus
           Mitgliedsbeiträgen und Spenden finanziert. Wenn Du uns unter
