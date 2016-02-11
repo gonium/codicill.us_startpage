@@ -253,9 +253,9 @@ $("#customPadUrl").keyup(function(event){
     function openLitePadUrl() {
       var customPadName = $('#customPadUrl').val();
       if (customPadName === "") {
-        loadPadUrl("p/" + createUUID());
+        loadPadUrl("pad/p/" + createUUID());
       } else {
-        loadPadUrl("p/" + createUUID() + "-" + customPadName);
+        loadPadUrl("pad/p/" + createUUID() + "-" + customPadName);
       }
     }
   </script>
